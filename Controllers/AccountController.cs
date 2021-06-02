@@ -195,11 +195,12 @@ namespace NewsWebApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model, HttpPostedFileBase upload)
         {
-            if (upload.ContentLength > 0)
+            if (ModelState.IsValid)
             {
+                
+                ViewBag.UserType = new SelectList(db.Roles.Where(a=>!a.Name.Contains("admin")).ToList(), "Name", "Name");
                 string path = Path.Combine(Server.MapPath("~/Users"), upload.FileName);
                 upload.SaveAs(path);
-                ViewBag.UserType = new SelectList(db.Roles.Where(a=>!a.Name.Contains("admin")).ToList(), "Name", "Name");
                 var user = new ApplicationUser {
                     
                     UserImage = upload.FileName,

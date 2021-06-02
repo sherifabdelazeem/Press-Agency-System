@@ -23,10 +23,11 @@
         {
 
         <div class="col-md-3 thumbnail" style="margin-left:20px;margin-bottom:30px; height:380px;">
-            <img src="~/Uploads/@subitem.ArticleImage" style="width:380px;height:280px"/>
+            <img src="~/Uploads/@subitem.ArticleImage" style="width:380px;height:280px" />
             <h3>@Html.DisplayFor(modelItem => subitem.ArticleTitle)</h3>
-            
-            @Html.ActionLink("Show Details", "Details", new { postId = subitem.PostId },new {@class = "btn btn-primary" }) 
+            <h5> Written By @Html.DisplayFor(modelItem => subitem.User.UserName)</h5>
+
+            @Html.ActionLink("Show Details", "Details", new { postId = subitem.PostId }, new { @class = "btn btn-primary" })
         </div>
 
    
