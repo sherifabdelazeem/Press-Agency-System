@@ -1,0 +1,41 @@
+﻿@model NewsWebApp.Models.AskForPost
+    @{ 
+        ViewBag.Title = "DetailsOfPost";
+        
+    }
+
+<div>
+    <h4>Post Message</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.post.ArticleTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.post.ArticleTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.user.UserType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.user.UserType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Message)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Message)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { @class = "btn btn-default" })
+    @Html.ActionLink("Back to Questions", "GetAskByUser", new { @class = "btn btn-default" }) |
+</p>
+

@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Save";
+    Layout = "~/Views/Shared/_Wall.cshtml";
+}
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h3>Ask About Article</h3>
+        <hr />
+
+        <div>
+            @{ 
+                if(ViewBag.Result!=null)
+                {
+                    <h4>@ViewBag.Result</h4>
+                }
+            }
+        </div>
+
+
+
+        <hr />
+
+       
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+

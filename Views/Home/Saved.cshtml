@@ -1,0 +1,59 @@
+﻿@model IEnumerable<NewsWebApp.Models.Post>
+
+@{
+    ViewBag.Title = "Saved";
+    Layout = "~/Views/Shared/_Wall.cshtml";
+}
+
+<h2>Saved Posts</h2>
+
+
+<table class="table table-bordered table-hover" >
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PostType.ArticleType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.User.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ArticleTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ArticleBody)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ArticleImage)
+        </th>
+      
+        <th>
+            @Html.DisplayNameFor(model => model.ReleaseDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PostType.ArticleType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ArticleTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ArticleBody)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ArticleImage)
+        </td>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.ReleaseDate)
+        </td>
+    </tr>
+}
+
+</table>

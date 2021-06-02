@@ -1,0 +1,42 @@
+﻿@model IEnumerable<NewsWebApp.Models.AskForPost>
+
+@{
+    ViewBag.Title = "GetAskByUser";
+    
+}
+
+<h2>Questions History</h2>
+
+<table class="table table-striped table-bordered table-hover">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.post.ArticleTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Message)
+        </th>
+        
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.post.ArticleTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Message)
+            </td>
+          
+          
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.PostId }) |
+                @Html.ActionLink("Details", "DetailsOfPost", new { id = item.post.PostId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.PostId })
+            </td>
+        </tr>
+    }
+
+</table>
+

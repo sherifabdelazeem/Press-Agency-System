@@ -1,0 +1,244 @@
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\NewsWebApp.dll.config
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\NewsWebApp.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\NewsWebApp.pdb
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\csc.exe
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\csc.exe.config
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\csc.rsp
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\csi.exe
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\csi.exe.config
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\csi.rsp
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.AppContext.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.Console.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.IO.Compression.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.Net.Http.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.ValueTuple.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\vbc.exe
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\vbc.exe.config
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\vbc.rsp
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Antlr3.Runtime.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\EntityFramework.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\EntityFramework.SqlServer.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.Owin.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.Owin.Security.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Newtonsoft.Json.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Owin.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\System.Web.Helpers.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\System.Web.Mvc.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\System.Web.Optimization.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\System.Web.Razor.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\System.Web.WebPages.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\WebGrease.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\EntityFramework.xml
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\EntityFramework.SqlServer.xml
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.Owin.xml
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\System.Web.Helpers.xml
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\System.Web.Mvc.xml
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\System.Web.Optimization.xml
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\System.Web.Razor.xml
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\System.Web.WebPages.xml
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Newtonsoft.Json.xml
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Antlr3.Runtime.pdb
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.Owin.Security.xml
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\obj\Debug\NewsWebApp.Migrations.InitialCreate.resources
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\obj\Debug\NewsWebApp.Migrations.Addcolumn.resources
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\obj\Debug\NewsWebApp.Migrations.AddPost.resources
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\obj\Debug\NewsWebApp.Migrations.edittype.resources
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\obj\Debug\NewsWebApp.Migrations.stopadding.resources
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\obj\Debug\NewsWebApp.Migrations.asktable.resources
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\obj\Debug\NewsWebApp.Migrations.askupdate.resources
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\obj\Debug\NewsWebApp.Migrations.askedit.resources
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\obj\Debug\NewsWebApp.csproj.GenerateResource.cache
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\obj\Debug\NewsWebApp.csproj.CoreCompileInputs.cache
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\obj\Debug\NewsWebApp.csproj.CopyComplete
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\obj\Debug\NewsWebApp.dll
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\obj\Debug\NewsWebApp.pdb
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\obj\Debug\NewsWebApp.Migrations.editposttable.resources
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\obj\Debug\NewsWebApp.Migrations.editUserTable1.resources
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\obj\Debug\NewsWebApp.Migrations.blind.resources
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\obj\Debug\NewsWebApp.Migrations.yarbtnf3.resources
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\obj\Debug\NewsWebApp.Migrations.savemethod.resources
+C:\Users\Sharpel Malak\source\repos\NewsWebApp\obj\Debug\NewsWebApp.csprojAssemblyReference.cache
+A:\NewsWebApp\bin\NewsWebApp.dll.config
+A:\NewsWebApp\bin\NewsWebApp.dll
+A:\NewsWebApp\bin\NewsWebApp.pdb
+A:\NewsWebApp\bin\roslyn\csc.exe
+A:\NewsWebApp\bin\roslyn\csc.exe.config
+A:\NewsWebApp\bin\roslyn\csc.rsp
+A:\NewsWebApp\bin\roslyn\csi.exe
+A:\NewsWebApp\bin\roslyn\csi.exe.config
+A:\NewsWebApp\bin\roslyn\csi.rsp
+A:\NewsWebApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+A:\NewsWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+A:\NewsWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+A:\NewsWebApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+A:\NewsWebApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+A:\NewsWebApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+A:\NewsWebApp\bin\roslyn\Microsoft.CSharp.Core.targets
+A:\NewsWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+A:\NewsWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+A:\NewsWebApp\bin\roslyn\Microsoft.Managed.Core.targets
+A:\NewsWebApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+A:\NewsWebApp\bin\roslyn\Microsoft.Win32.Primitives.dll
+A:\NewsWebApp\bin\roslyn\System.AppContext.dll
+A:\NewsWebApp\bin\roslyn\System.Collections.Immutable.dll
+A:\NewsWebApp\bin\roslyn\System.Console.dll
+A:\NewsWebApp\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+A:\NewsWebApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+A:\NewsWebApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+A:\NewsWebApp\bin\roslyn\System.Globalization.Calendars.dll
+A:\NewsWebApp\bin\roslyn\System.IO.Compression.dll
+A:\NewsWebApp\bin\roslyn\System.IO.Compression.ZipFile.dll
+A:\NewsWebApp\bin\roslyn\System.IO.FileSystem.dll
+A:\NewsWebApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+A:\NewsWebApp\bin\roslyn\System.Net.Http.dll
+A:\NewsWebApp\bin\roslyn\System.Net.Sockets.dll
+A:\NewsWebApp\bin\roslyn\System.Reflection.Metadata.dll
+A:\NewsWebApp\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+A:\NewsWebApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+A:\NewsWebApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+A:\NewsWebApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+A:\NewsWebApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+A:\NewsWebApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+A:\NewsWebApp\bin\roslyn\System.Threading.Tasks.Extensions.dll
+A:\NewsWebApp\bin\roslyn\System.ValueTuple.dll
+A:\NewsWebApp\bin\roslyn\System.Xml.ReaderWriter.dll
+A:\NewsWebApp\bin\roslyn\System.Xml.XmlDocument.dll
+A:\NewsWebApp\bin\roslyn\System.Xml.XPath.dll
+A:\NewsWebApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+A:\NewsWebApp\bin\roslyn\vbc.exe
+A:\NewsWebApp\bin\roslyn\vbc.exe.config
+A:\NewsWebApp\bin\roslyn\vbc.rsp
+A:\NewsWebApp\bin\roslyn\VBCSCompiler.exe
+A:\NewsWebApp\bin\roslyn\VBCSCompiler.exe.config
+A:\NewsWebApp\bin\Antlr3.Runtime.dll
+A:\NewsWebApp\bin\EntityFramework.dll
+A:\NewsWebApp\bin\EntityFramework.SqlServer.dll
+A:\NewsWebApp\bin\Microsoft.AspNet.Identity.Core.dll
+A:\NewsWebApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+A:\NewsWebApp\bin\Microsoft.AspNet.Identity.Owin.dll
+A:\NewsWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+A:\NewsWebApp\bin\Microsoft.Owin.dll
+A:\NewsWebApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+A:\NewsWebApp\bin\Microsoft.Owin.Security.Cookies.dll
+A:\NewsWebApp\bin\Microsoft.Owin.Security.dll
+A:\NewsWebApp\bin\Microsoft.Owin.Security.Facebook.dll
+A:\NewsWebApp\bin\Microsoft.Owin.Security.Google.dll
+A:\NewsWebApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+A:\NewsWebApp\bin\Microsoft.Owin.Security.OAuth.dll
+A:\NewsWebApp\bin\Microsoft.Owin.Security.Twitter.dll
+A:\NewsWebApp\bin\Microsoft.Web.Infrastructure.dll
+A:\NewsWebApp\bin\Newtonsoft.Json.dll
+A:\NewsWebApp\bin\Owin.dll
+A:\NewsWebApp\bin\System.Web.Helpers.dll
+A:\NewsWebApp\bin\System.Web.Mvc.dll
+A:\NewsWebApp\bin\System.Web.Optimization.dll
+A:\NewsWebApp\bin\System.Web.Razor.dll
+A:\NewsWebApp\bin\System.Web.WebPages.Deployment.dll
+A:\NewsWebApp\bin\System.Web.WebPages.dll
+A:\NewsWebApp\bin\System.Web.WebPages.Razor.dll
+A:\NewsWebApp\bin\WebGrease.dll
+A:\NewsWebApp\bin\EntityFramework.xml
+A:\NewsWebApp\bin\EntityFramework.SqlServer.xml
+A:\NewsWebApp\bin\Microsoft.Owin.xml
+A:\NewsWebApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+A:\NewsWebApp\bin\System.Web.Helpers.xml
+A:\NewsWebApp\bin\System.Web.Mvc.xml
+A:\NewsWebApp\bin\System.Web.Optimization.xml
+A:\NewsWebApp\bin\System.Web.Razor.xml
+A:\NewsWebApp\bin\System.Web.WebPages.xml
+A:\NewsWebApp\bin\System.Web.WebPages.Deployment.xml
+A:\NewsWebApp\bin\System.Web.WebPages.Razor.xml
+A:\NewsWebApp\bin\Newtonsoft.Json.xml
+A:\NewsWebApp\bin\Antlr3.Runtime.pdb
+A:\NewsWebApp\bin\Microsoft.AspNet.Identity.Core.xml
+A:\NewsWebApp\bin\Microsoft.AspNet.Identity.Owin.xml
+A:\NewsWebApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+A:\NewsWebApp\bin\Microsoft.Owin.Security.xml
+A:\NewsWebApp\bin\Microsoft.Owin.Security.Facebook.xml
+A:\NewsWebApp\bin\Microsoft.Owin.Security.Cookies.xml
+A:\NewsWebApp\bin\Microsoft.Owin.Security.Google.xml
+A:\NewsWebApp\bin\Microsoft.Owin.Security.Twitter.xml
+A:\NewsWebApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+A:\NewsWebApp\bin\Microsoft.Owin.Security.OAuth.xml
+A:\NewsWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+A:\NewsWebApp\obj\Debug\NewsWebApp.csprojAssemblyReference.cache
+A:\NewsWebApp\obj\Debug\NewsWebApp.Migrations.InitialCreate.resources
+A:\NewsWebApp\obj\Debug\NewsWebApp.Migrations.Addcolumn.resources
+A:\NewsWebApp\obj\Debug\NewsWebApp.Migrations.AddPost.resources
+A:\NewsWebApp\obj\Debug\NewsWebApp.Migrations.edittype.resources
+A:\NewsWebApp\obj\Debug\NewsWebApp.Migrations.stopadding.resources
+A:\NewsWebApp\obj\Debug\NewsWebApp.Migrations.asktable.resources
+A:\NewsWebApp\obj\Debug\NewsWebApp.Migrations.askupdate.resources
+A:\NewsWebApp\obj\Debug\NewsWebApp.Migrations.askedit.resources
+A:\NewsWebApp\obj\Debug\NewsWebApp.Migrations.editposttable.resources
+A:\NewsWebApp\obj\Debug\NewsWebApp.Migrations.editUserTable1.resources
+A:\NewsWebApp\obj\Debug\NewsWebApp.Migrations.blind.resources
+A:\NewsWebApp\obj\Debug\NewsWebApp.Migrations.yarbtnf3.resources
+A:\NewsWebApp\obj\Debug\NewsWebApp.Migrations.savemethod.resources
+A:\NewsWebApp\obj\Debug\NewsWebApp.csproj.GenerateResource.cache
+A:\NewsWebApp\obj\Debug\NewsWebApp.csproj.CoreCompileInputs.cache
+A:\NewsWebApp\obj\Debug\NewsWebApp.csproj.CopyComplete
+A:\NewsWebApp\obj\Debug\NewsWebApp.dll
+A:\NewsWebApp\obj\Debug\NewsWebApp.pdb
