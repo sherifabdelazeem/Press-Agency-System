@@ -31,9 +31,9 @@
           
           
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.PostId }) |
-                @Html.ActionLink("Details", "DetailsOfPost", new { id = item.post.PostId }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.PostId })
+               
+                @Html.ActionLink("Details", "DetailsOfPost", new { PostId = item.post.PostId }) |
+                @Html.ActionLink("Delete", "DeleteQuestion", new { PostId = item.PostId })
             </td>
         </tr>
     }

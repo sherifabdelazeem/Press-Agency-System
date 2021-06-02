@@ -53,7 +53,11 @@
         <td>
             @Html.DisplayFor(modelItem => item.ReleaseDate)
         </td>
+        <td>
+            @Html.ActionLink("Delete", "DeleteSaved", new { postid = item.PostId }, new { @class = "btn btn-danger" }) 
+        </td>
     </tr>
+
 }
 
 </table>

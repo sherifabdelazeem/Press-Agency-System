@@ -32,7 +32,9 @@ namespace NewsWebApp.Models
         [Display(Name = "Article Type")]
         public int CategoryId { get;set; }
         public string UserId { get; set; }
+        
 
+        
         public virtual PostType PostType { get; set; }
         public virtual ApplicationUser User { get; set; }
 

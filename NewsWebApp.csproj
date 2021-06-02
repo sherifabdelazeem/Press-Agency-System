@@ -333,6 +333,8 @@
     <Content Include="Views\Admin\ViewUsers.cshtml" />
     <Content Include="Views\Home\IndexEditor.cshtml" />
     <Content Include="Views\Posts\EditorPosts.cshtml" />
+    <Content Include="Views\Home\DeleteSaved.cshtml" />
+    <Content Include="Views\Home\DeleteQuestion.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

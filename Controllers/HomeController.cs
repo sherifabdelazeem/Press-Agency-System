@@ -96,17 +96,46 @@ namespace NewsWebApp.Controllers
 
             return View(post.ToList());
         }
-        //error here
+        
         [Authorize]
-        public ActionResult DetailsOfPost(int Id)
+        public ActionResult DetailsOfPost(int postId)
         {
-            var post = db.Posts.Find(Id);
+            var post = db.AskForPosts.Where(a => a.PostId == postId).SingleOrDefault();
+            var Id = post.Id;
+            var asks = db.AskForPosts.Find(Id);
             if (post == null)
             {
                 return HttpNotFound();
             }
 
+            return View(asks);
+        }
+        public ActionResult DeleteQuestion(int? postid)
+        {
+            if (postid == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var Que = db.AskForPosts.Where(a => a.PostId == postid).SingleOrDefault();
+            var Id = Que.Id;
+            AskForPost post = db.AskForPosts.Find(Id);
+            if (post == null)
+            {
+                return HttpNotFound();
+            }
             return View(post);
+        }
+
+        // POST: Saved/Delete/5
+        [HttpPost, ActionName("DeleteQuestion")]
+        public ActionResult DeleteQuestion(int postid)
+        {
+            var Que = db.AskForPosts.Where(a => a.PostId == postid).SingleOrDefault();
+            var Id = Que.Id;
+            AskForPost post1 = db.AskForPosts.Find(Id);
+            db.AskForPosts.Remove(post1);
+            db.SaveChanges();
+            return RedirectToAction("GetAskByUser");
         }
 
         [Authorize]
@@ -149,13 +178,22 @@ namespace NewsWebApp.Controllers
             var UserId = User.Identity.GetUserId();
             var PostId =(int)Session["postId"];
 
-            var post = new SavePost();
-            post.UserId = UserId;
-            post.PostId = PostId;
-            
-            db.SavePosts.Add(post);
-            db.SaveChanges();
-            ViewBag.Result = " Saved Successfully ..";
+            var check = db.SavePosts.Where(a => a.PostId == PostId && a.UserId == UserId).ToList();
+            if(check.Count < 1) {
+                var post = new SavePost();
+                post.UserId = UserId;
+                post.PostId = PostId;
+
+                db.SavePosts.Add(post);
+                db.SaveChanges();
+                ViewBag.Result = " Saved Successfully ..";
+                
+
+            }
+           else
+            {
+                ViewBag.Result = " Already Saved Check Your Saved Page..";
+            }
 
 
             return View();
@@ -173,7 +211,34 @@ namespace NewsWebApp.Controllers
 
             return View(Posts.ToList());
         }
+        // GET: Saved/Delete/5
+        public ActionResult DeleteSaved(int? postid)
+        {
+            if (postid == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+             Post post = db.Posts.Find(postid);
+            if (post == null)
+            {
+                return HttpNotFound();
+            }
+            return View(post);
+        }
 
-        
+        // POST: Saved/Delete/5
+        [HttpPost, ActionName("DeleteSaved")]
+        public ActionResult DeleteSaved(int postid)
+        {
+            var post = db.SavePosts.Where(a => a.PostId == postid).SingleOrDefault();
+            var Id = post.Id;
+            SavePost post1 = db.SavePosts.Find(Id);
+            db.SavePosts.Remove(post1);
+            db.SaveChanges();
+            return RedirectToAction("Saved");
+        }
+
+
+
     }
 }

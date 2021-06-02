@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -192,19 +193,23 @@ namespace NewsWebApp.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Register(RegisterViewModel model)
+        public async Task<ActionResult> Register(RegisterViewModel model, HttpPostedFileBase upload)
         {
-            if (ModelState.IsValid)
+            if (upload.ContentLength > 0)
             {
+                string path = Path.Combine(Server.MapPath("~/Users"), upload.FileName);
+                upload.SaveAs(path);
                 ViewBag.UserType = new SelectList(db.Roles.Where(a=>!a.Name.Contains("admin")).ToList(), "Name", "Name");
                 var user = new ApplicationUser {
+                    
+                    UserImage = upload.FileName,
                     UserName = model.UserName,
                     Email = model.Email,
                     UserType = model.UserType,
                     FirstName = model.FirstName,
                     LastName = model.LastName,
-                    Phone = model.Phone,
-                    UserImage=model.UserImage,
+                    Phone = model.Phone
+                    
                 };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
