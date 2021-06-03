@@ -5,12 +5,15 @@
     Layout = "~/Views/Shared/_DashBoard.cshtml";
 }
 
+<<<<<<< Updated upstream
 
+=======
+
+>>>>>>> Stashed changes
 
 <div class="jumbotron">
     <h1>Home page</h1>
-    <p class="lead">NEWS APPLICATION YOU CAN READ ANY ANYTHING HERE JUST LOGIN TO INTERACT WITH POSTS</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+
 </div>
 
 
@@ -24,9 +27,12 @@
             @foreach (var subitem in item.Posts)
             {
 
-                <div class="col-md-3 thumbnail" style="margin-left:20px;margin-bottom:30px; height:380px;">
-                    <img src="~/Uploads/@subitem.ArticleImage" style="width:380px;height:280px" />
+                <div class="col-md-3 thumbnail" style="margin-left:32px;margin-bottom:30px; height:400px;width:250px;">
+                    <img src="~/Uploads/@subitem.ArticleImage" style="width:150px;height:120px" />
                     <h3>@Html.DisplayFor(modelItem => subitem.ArticleTitle)</h3>
+                    <textarea readonly style="width: 230px;resize: none; height: 130px; border: hidden;">@Html.DisplayFor(modelItem => subitem.ArticleBody)</textarea>
+                    <h5> Written By @Html.DisplayFor(modelItem => subitem.User.UserName)</h5>
+
 
                     @Html.ActionLink("Show Details", "Details", new { postId = subitem.PostId }, new { @class = "btn btn-primary" })
                 </div>
@@ -40,4 +46,3 @@
 
 
 }
-
