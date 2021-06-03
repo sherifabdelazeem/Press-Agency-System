@@ -363,3 +363,5 @@ C:\Users\Sharpel Malak\OneDrive\Documents\GitHub\Press-agency-system\obj\Debug\N
 C:\Users\Sharpel Malak\OneDrive\Documents\GitHub\Press-agency-system\obj\Debug\NewsWebApp.csproj.CopyComplete
 C:\Users\Sharpel Malak\OneDrive\Documents\GitHub\Press-agency-system\obj\Debug\NewsWebApp.dll
 C:\Users\Sharpel Malak\OneDrive\Documents\GitHub\Press-agency-system\obj\Debug\NewsWebApp.pdb
+C:\Users\Sharpel Malak\OneDrive\Documents\GitHub\Press-agency-system\obj\Debug\NewsWebApp.csprojAssemblyReference.cache
+C:\Users\Sharpel Malak\OneDrive\Documents\GitHub\Press-agency-system\obj\Debug\NewsWebApp.Migrations.registererror.resources

@@ -123,7 +123,7 @@ namespace NewsWebApp.Controllers
             ApplicationUser applicationUser = db.Users.Find(id);
             db.Users.Remove(applicationUser);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("ViewUsers");
         }
 
         protected override void Dispose(bool disposing)

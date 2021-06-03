@@ -229,6 +229,10 @@
     <Compile Include="Migrations\202106012042351_savemethod.Designer.cs">
       <DependentUpon>202106012042351_savemethod.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106030149324_registererror.cs" />
+    <Compile Include="Migrations\202106030149324_registererror.Designer.cs">
+      <DependentUpon>202106030149324_registererror.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AskForPost.cs" />
@@ -393,6 +397,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106012042351_savemethod.resx">
       <DependentUpon>202106012042351_savemethod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106030149324_registererror.resx">
+      <DependentUpon>202106030149324_registererror.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
