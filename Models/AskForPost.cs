@@ -10,7 +10,9 @@ namespace NewsWebApp.Models
     {
         public int Id { get; set; }
         public string Message { get; set; }
-       
+        public string Reply { get; set; }
+
+
         public int PostId { get; set; }
         public string UserId { get; set; }
 

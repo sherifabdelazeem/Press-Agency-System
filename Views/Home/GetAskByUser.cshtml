@@ -15,27 +15,33 @@
         <th>
             @Html.DisplayNameFor(model => model.Message)
         </th>
-        
+        <th>
+            @Html.DisplayNameFor(model => model.Reply)
+        </th>
+
         <th></th>
     </tr>
 
     @foreach (var item in Model)
     {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.post.ArticleTitle)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Message)
-            </td>
-          
-          
-            <td>
-               
-                @Html.ActionLink("Details", "DetailsOfPost", new { PostId = item.post.PostId }) |
-                @Html.ActionLink("Delete", "DeleteQuestion", new { PostId = item.PostId })
-            </td>
-        </tr>
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.post.ArticleTitle)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Message)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Reply)
+    </td>
+
+
+    <td>
+
+        @Html.ActionLink("Details", "DetailsOfPost", new { PostId = item.post.PostId }) |
+        @Html.ActionLink("Delete", "DeleteQuestion", new { PostId = item.PostId })
+    </td>
+</tr>
     }
 
 </table>

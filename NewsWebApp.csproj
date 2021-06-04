@@ -233,6 +233,18 @@
     <Compile Include="Migrations\202106030149324_registererror.Designer.cs">
       <DependentUpon>202106030149324_registererror.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106032143558_addphonenumber.cs" />
+    <Compile Include="Migrations\202106032143558_addphonenumber.Designer.cs">
+      <DependentUpon>202106032143558_addphonenumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106032157093_likeadded.cs" />
+    <Compile Include="Migrations\202106032157093_likeadded.Designer.cs">
+      <DependentUpon>202106032157093_likeadded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106040018070_replyeditor.cs" />
+    <Compile Include="Migrations\202106040018070_replyeditor.Designer.cs">
+      <DependentUpon>202106040018070_replyeditor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AskForPost.cs" />
@@ -251,6 +263,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -339,6 +352,7 @@
     <Content Include="Views\Posts\EditorPosts.cshtml" />
     <Content Include="Views\Home\DeleteSaved.cshtml" />
     <Content Include="Views\Home\DeleteQuestion.cshtml" />
+    <Content Include="Views\Home\Reply.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -400,6 +414,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106030149324_registererror.resx">
       <DependentUpon>202106030149324_registererror.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106032143558_addphonenumber.resx">
+      <DependentUpon>202106032143558_addphonenumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106032157093_likeadded.resx">
+      <DependentUpon>202106032157093_likeadded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106040018070_replyeditor.resx">
+      <DependentUpon>202106040018070_replyeditor.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

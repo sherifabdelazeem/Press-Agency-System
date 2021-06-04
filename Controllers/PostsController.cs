@@ -64,19 +64,21 @@ namespace NewsWebApp.Controllers
         {
             if (upload.ContentLength > 0)
             {
+                post.Like = 0;
+                post.DisLike = 0;
                 string path = Path.Combine(Server.MapPath("~/Uploads"), upload.FileName);
                 upload.SaveAs(path);
                 post.ArticleImage = upload.FileName;
                 post.UserId = User.Identity.GetUserId();
                 db.Posts.Add(post);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("EditorPosts");
             }
 
             ViewBag.CategoryId = new SelectList(db.PostTypes, "ID", "ArticleType", post.CategoryId);
             return View(post);
         }
-
+       
         // GET: Posts/Edit/5
         public ActionResult Edit(int? id)
         {

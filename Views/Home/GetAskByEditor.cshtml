@@ -19,17 +19,27 @@
             <th>
                 The Message
             </th>
+            <th>
+                Answer
+            </th>
         </tr>
         @foreach (var item in gr.Items)
         {
-            <tr>
-                <td>
-                    @item.user.UserName
-                </td>
-                <td>
-                    @item.Message
-                </td>
-            </tr>
+    <tr>
+        <td>
+            @item.user.UserName
+        </td>
+        <td>
+            @item.Message
+        </td>
+        <td>
+            @item.Reply
+        </td>
+        <td>
+            @Html.ActionLink("Reply", "Reply",new {id = item.Id}, new { @class = "btn btn-default" })
+        </td>
+
+    </tr>
         }
     </table>
 }

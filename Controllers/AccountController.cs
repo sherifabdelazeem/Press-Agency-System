@@ -75,44 +75,7 @@ namespace NewsWebApp.Controllers
             {
                 return View(model);
             }
-            //var UserId = User.Identity.GetUserId();
-           // var user = db.Users.Where(a => a.Id == UserId).SingleOrDefault();
-            //var role = user.UserName;
-           
-            /*
-            var UserId = User.Identity.GetUserId();
-            var User1 = from user in db.Users
-                        join role in db.Roles
-                        on user.UserType equals role.Name
-                        where user.Id == UserId
-                        select user.UserType;
-
-            var sh = User1.ToString();
-
-            var UserId = User.Identity.GetUserId();
-            var user = db.Users.Where(a => a.Id == UserId).SingleOrDefault();
-
-            if (UserId!= null)
-            {
-
-                if (sh == "Admin")
-                {
-                    return RedirectToAction("Index", "Admin");
-                }
-                else if (sh ==  "Editor")
-                {
-                    return RedirectToAction("About");
-
-                }
-                else
-                {
-                    return View(model);
-                }
-
-            } 
-
-        }
-            */
+          
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true
             var result = await SignInManager.PasswordSignInAsync(model.UserName, model.Password, model.RememberMe, shouldLockout: false);
@@ -194,23 +157,23 @@ namespace NewsWebApp.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Register(RegisterViewModel model, HttpPostedFileBase upload)
+        public async Task<ActionResult> Register(RegisterViewModel model )
         {
             if (ModelState.IsValid)
             {
                 
                 ViewBag.UserType = new SelectList(db.Roles.Where(a=>!a.Name.Contains("admin")).ToList(), "Name", "Name");
-                string path = Path.Combine(Server.MapPath("~/Users"), upload.FileName);
-                upload.SaveAs(path);
+                /*string path = Path.Combine(Server.MapPath("~/Users"), upload.FileName);
+                upload.SaveAs(path);*/
                 var user = new ApplicationUser {
                     
-                    UserImage = upload.FileName,
+                    UserImage = model.UserImage,
                     UserName = model.UserName,
                     Email = model.Email,
                     UserType = model.UserType,
                     FirstName = model.FirstName,
                     LastName = model.LastName,
-                    Phone = model.Phone
+                    PhoneNumber = model.PhoneNumber,
                     
                 };
                 var result = await UserManager.CreateAsync(user, model.Password);
@@ -243,14 +206,34 @@ namespace NewsWebApp.Controllers
             profile.FirstName = user.FirstName;
             profile.LastName = user.LastName;
             profile.Email = user.Email;
-            profile.Phone = user.Phone;
+            profile.PhoneNumber = user.PhoneNumber;
             profile.UserImage = user.UserImage;
 
             return View(profile);
         }
         [HttpPost]
-        public ActionResult EditProfile(EditViewModel Profile)
+        public ActionResult EditProfile(EditViewModel profile)
         {
+            var Userid = User.Identity.GetUserId();
+            var CurrentUser = db.Users.Where(a => a.Id == Userid).SingleOrDefault();
+            if (!UserManager.CheckPassword(CurrentUser, profile.CurrentPassword))
+            {
+                ViewBag.Message = "Current Password incorrect";
+            }
+            else
+            {
+                var newpasswordHash = UserManager.PasswordHasher.HashPassword(profile.NewPassword);
+                CurrentUser.UserName = profile.UserName;
+                CurrentUser.FirstName = profile.FirstName;
+                CurrentUser.LastName = profile.LastName;
+                CurrentUser.Email = profile.Email;
+                CurrentUser.PhoneNumber = profile.PhoneNumber;
+                CurrentUser.UserImage = profile.UserImage;
+                CurrentUser.PasswordHash = newpasswordHash;
+                db.Entry(CurrentUser).State = System.Data.Entity.EntityState.Modified;
+                db.SaveChanges();
+                ViewBag.Message = "Successfully updated your profile";
+            }
             return View();
         }
 

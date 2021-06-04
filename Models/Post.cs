@@ -28,6 +28,11 @@ namespace NewsWebApp.Models
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime ReleaseDate { get; set; }
+        [Display(Name = "Likes")]
+        public int Like { get; set; }
+        [Display(Name = "DisLikes")]
+        public int DisLike { get; set; }
+       // public bool Statue { get; set; }
         [ForeignKey("PostType")]
         [Display(Name = "Article Type")]
         public int CategoryId { get;set; }

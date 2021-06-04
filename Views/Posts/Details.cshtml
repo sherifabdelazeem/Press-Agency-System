@@ -1,10 +1,23 @@
 ﻿<link href="~/Content/Style.css" rel="stylesheet" />
 @model NewsWebApp.Models.Post
-
+@using NewsWebApp.Models
+@using Microsoft.AspNet.Identity;
 @{
     ViewBag.Title = "Details";
-}
 
+    ApplicationDbContext db = new ApplicationDbContext();
+    var UserId = User.Identity.GetUserId();
+    var user = db.Users.Where(a => a.Id == UserId).SingleOrDefault();
+    if (user.UserType == "Editor")
+    {
+
+        Layout = "~/Views/Shared/_Factory.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_DashBoard.cshtml";
+
+    } }
 <h3>Post details</h3>
 
 <div>

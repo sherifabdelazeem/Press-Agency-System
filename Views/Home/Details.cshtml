@@ -1,62 +1,79 @@
 ﻿@model NewsWebApp.Models.Post
 
 <div>
-    <h4>Post</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.PostType.ArticleType)
-        </dt>
+    <table style="width:70%" class="table table-striped table-bordered table-hover">
+        <tr>
+            <td style="width:20%">
+                @Html.DisplayNameFor(model => model.PostType.ArticleType)
+            </td>
 
-        <dd>
-            @Html.DisplayFor(model => model.PostType.ArticleType)
-        </dd>
+            <td>
+                @Html.DisplayFor(model => model.PostType.ArticleType)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.ArticleTitle)
+            </td>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ArticleTitle)
-        </dt>
+            <td>
+                @Html.DisplayFor(model => model.ArticleTitle)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.ArticleBody)
+            </td>
 
-        <dd>
-            @Html.DisplayFor(model => model.ArticleTitle)
-        </dd>
+            <td>
+                @Html.DisplayFor(model => model.ArticleBody)
+            </td>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ArticleBody)
-        </dt>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.ArticleImage)
+            </td>
+            <td>
+                <img src="~/Uploads/@Html.DisplayFor(model => model.ArticleImage)" class="thumbnail" style="width:48px; height:48px;" />
+            </td>
 
-        <dd>
-            @Html.DisplayFor(model => model.ArticleBody)
-        </dd>
+        </tr>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ArticleImage)
-        </dt>
 
-        <dd>
-            <img src="~/Uploads/@Html.DisplayFor(model => model.ArticleImage)" class="thumbnail" style="width:48px; height:48px;" />
-        </dd>
-        
 
-        <dt>
-            @Html.DisplayNameFor(model => model.User.UserName)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.User.UserName)
-        </dd>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.NumberOfViewers)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.NumberOfViewers)
+            </td>
+        </tr>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ReleaseDate)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.ReleaseDate)
-        </dd>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.ReleaseDate)
+            </td>
 
-    </dl>
+            <td>
+                @Html.DisplayFor(model => model.ReleaseDate)
+            </td>
+        </tr>
+    </table>
 </div>
 <p>
-    @Html.ActionLink("Save Post", "SaveAction", new { id = Model.PostId }, new { @class = "btn btn-success" }) |
-    @Html.ActionLink("Ask Question?", "Ask", new { id = Model.PostId }, new { @class = "btn btn-success" }) |
-    @Html.ActionLink("Back to Home", "Index", new { @class = "btn btn-default" }) |
+    @Html.ActionLink("Like", "Like", new { id = Model.PostId }, new { @class = "btn btn-success" })
+    @Html.ActionLink("DisLike", "DisLike", new { id = Model.PostId }, new { @class = "btn btn-danger" })
+    
+    @Html.ActionLink("Save Post", "SaveAction", new { id = Model.PostId }, new { @class = "btn btn-success" }) 
+    <br />
+    <br />
+    @Html.ActionLink("Ask Question?", "Ask", new { id = Model.PostId }, new { @class = "btn btn-success" }) 
+    <br />
+    <br />
+    @Html.ActionLink("Back to Home", "Index", new { @class = "btn btn-default" }) 
 </p>

@@ -45,6 +45,22 @@ namespace NewsWebApp.Controllers
 
             return View(list);
         }
+        public ActionResult Like(int id)
+        {
+
+            Post updatePost = db.Posts.ToList().Find(u => u.PostId == id);
+            updatePost.Like += 1;
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult DisLike(int id)
+        {
+            Post updatePost = db.Posts.ToList().Find(u => u.PostId == id);
+            updatePost.DisLike += 1;
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
         public ActionResult IndexEditor()
         {
             var list = db.PostTypes.ToList();
@@ -75,23 +91,55 @@ namespace NewsWebApp.Controllers
         {
             var UserId = User.Identity.GetUserId();
             var PostId = (int)Session["postId"];
+            var check = db.AskForPosts.Where(a => a.PostId == PostId && a.UserId == UserId).ToList();
+            if ( check.Count < 1 )
+            {
+                var post = new AskForPost();
+                post.UserId = UserId;
+                post.PostId = PostId;
+                post.Message = message;
+                db.AskForPosts.Add(post);
+                db.SaveChanges();
+                ViewBag.Result = "Successfully ..";
+            }
+            else
+            {
+                ViewBag.Result = "Your Question already sent..";
+            }
 
-            var post = new AskForPost();
-            post.UserId = UserId;
-            post.PostId = PostId;
-            post.Message = message;
-            db.AskForPosts.Add(post);
+            return View();
+        }
+        public ActionResult Reply()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Reply(string Reply,int id)
+        {
+           
+            AskForPost ReplyMessage = db.AskForPosts.Find(id);
+            if ( ReplyMessage == null)
+            {
+                return HttpNotFound();
+            }
+
+            ReplyMessage.Reply = Reply;
+            db.Entry(ReplyMessage).State = EntityState.Modified;
             db.SaveChanges();
-            ViewBag.Result = "Successfully ..";
+
+            ViewBag.Result = " Replied Successfully ..";
 
 
             return View();
         }
+
         [Authorize]
         public ActionResult GetAskByUser()
         {
             var UserId = User.Identity.GetUserId();
             var post = db.AskForPosts.Where(a => a.UserId == UserId);
+
 
 
             return View(post.ToList());

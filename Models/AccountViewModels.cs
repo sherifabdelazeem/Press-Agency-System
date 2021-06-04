@@ -66,21 +66,22 @@ namespace NewsWebApp.Models
     {
         [Required]
         
-        [Display(Name = "UserName")]
+        [Display(Name = "User Name")]
         public string UserName { get; set; }
         [Required]
-        [Display(Name = "FirstName")]
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
         [Required]
-        [Display(Name = "LastName")]
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
         [Required]
-        [Display(Name = "Phone")]
-        public string Phone { get; set; }
+        [Phone]
+        [Display(Name = "Phone Number")]
+        public string PhoneNumber { get; set; }
         [Required]
         [Display(Name = "UserImage")]
         public string UserImage { get; set; }
@@ -101,23 +102,24 @@ namespace NewsWebApp.Models
     {
         public int Id { get; set; }
         [Required]
-        [Display(Name = "UserName")]
+        [Display(Name = "User Name")]
         public string UserName { get; set; }
         [Required]
-        [Display(Name = "FirstName")]
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
         [Required]
-        [Display(Name = "LastName")]
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
         [Required]
-        [Display(Name = "Phone")]
-        public string Phone { get; set; }
+        [Phone]
+        [Display(Name = "Phone Number")]
+        public string PhoneNumber { get; set; }
         [Required]
-        [Display(Name = "UserImage")]
+        [Display(Name = "User Image")]
         public string UserImage { get; set; }
         [Required]
         [DataType(DataType.Password)]

@@ -1,9 +1,23 @@
 ﻿@model IEnumerable<NewsWebApp.Models.Post>
+@using NewsWebApp.Models
+@using Microsoft.AspNet.Identity;
+@using Microsoft.AspNet.Identity.Owin;
+@{ 
+    ViewBag.Title = "Posts";
 
-@{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_DashBoard.cshtml";
-}
+    ApplicationDbContext db = new ApplicationDbContext();
+    var UserId = User.Identity.GetUserId();
+    var user = db.Users.Where(a => a.Id == UserId).SingleOrDefault();
+    if (user.UserType == "Editor")
+    {
+
+        Layout = "~/Views/Shared/_Factory.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_DashBoard.cshtml";
+
+    } }
 <h3>Posts</h3>
 
 
@@ -14,6 +28,9 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.ArticleTitle)
+        </th>
+        <th style="width:9%">
+            @Html.DisplayNameFor(model => model.User.UserName)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.ArticleBody)
@@ -26,6 +43,12 @@
         </th>
         <th style="width:11%">
             @Html.DisplayNameFor(model => model.ReleaseDate)
+        </th>
+        <th style="width:11%">
+            @Html.DisplayNameFor(model => model.Like)
+        </th>
+        <th style="width:11%">
+            @Html.DisplayNameFor(model => model.DisLike)
         </th>
 
     </tr>
@@ -40,6 +63,9 @@
                 @Html.DisplayFor(modelItem => item.ArticleTitle)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.User.UserName)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.ArticleBody)
             </td>
             <td>
@@ -51,6 +77,15 @@
             <td>
                 @Html.DisplayFor(modelItem => item.ReleaseDate)
             </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Like) Likes<br />
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DisLike) Dislikes <br />
+
+            </td>
+
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = item.PostId })
             </td>

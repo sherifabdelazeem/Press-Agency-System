@@ -14,7 +14,7 @@ namespace NewsWebApp.Models
 
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string Phone { get; set; }
+       
         public string UserImage { get; set; }
         public virtual ICollection<Post> Posts { get; set; }
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
